@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>NЁRDS</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&nbsp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&nbsp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-    <div class="container clearfix">
+    <div class="container  clearfix">
 
-      <div class="main-header__top-wrapper  main-header__top-wrapper--catalog">
+      <div class="main-header__top-wrapper  main-header__top-wrapper--catalog  clearfix">
         <a class="main-header__logo" href="index.html">
           <img src="img/main-logo.png" width="139" height="56" alt="Main-Logo">
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Студия</a></li>
-            <li class="main-nav__item"><a href="#">Клиенты</a></li>
-            <li class="main-nav__item"><a href="#">Магазин</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
         <div class="main-header__cart">
           <a href="#">Корзина</a>
         </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a href="#">Студия</a></li>
+            <li class="main-nav__list-item"><a href="#">Клиенты</a></li>
+            <li class="main-nav__list-item"><a href="#">Магазин</a></li>
+            <li class="main-nav__list-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="main-header__title">Добро пожаловать в магазин готовых проектов</div>
     </div>
@@ -32,7 +33,7 @@
 
   <div class="main">
     <div class="container">
-      <div class="catalog">
+      <div class="catalog clearfix">
         <div class="catalog__form">
           <form class="form" action="/echo" method="post">
             <div class="form__title">Стоимость:</div>
@@ -110,57 +111,59 @@
               <div class="sorting__swich  sorting__swich--up"></div>
             </div>
           </div>
+          <div class="catalog__items">
+            <div class="catalog__item">
+              <div class="catalog__decoration"></div>
+              <a href="#"><img src="img/img_catalog-item-1.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+            </div>
+
+            <div class="catalog__item">
+              <div class="catalog__decoration"></div>
+              <a href="#"><img src="img/img_catalog-item-2.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+            </div>
+
+            <div class="catalog__item">
+              <div class="catalog__decoration"></div>
+              <a href="#"><img src="img/img_catalog-item-3.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+            </div>
+
+            <div class="catalog__item">
+              <div class="catalog__decoration"></div>
+              <a href="#"><img src="img/img_catalog-item-4.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+            </div>
+
+            <div class="catalog__item">
+              <div class="catalog__decoration"></div>
+              <a href="#"><img src="img/img_catalog-item-5.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+            </div>
+
+            <div class="catalog__item">
+              <div class="catalog__decoration"></div>
+              <a href="#"><img src="img/img_catalog-item-6.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+            </div>
+          </div>
+          <ul class="pagination">
+            <li class="pagination__item  pagination__item--active"><a href="#">1</a></li>
+            <li class="pagination__item"><a href="#">2</a></li>
+            <li class="pagination__item"><a href="#">3</a></li>
+            <li class="pagination__item"><a href="#"><span>Следующая</span></a></li>
+          </ul>
         </div>
-        <div class="catalog__items">
-          <div class="catalog__item">
-            <div class="catalog__decoration"></div>
-            <a href="#"><img src="img/img_catalog-item-1.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-          </div>
-
-          <div class="catalog__item">
-            <div class="catalog__decoration"></div>
-            <a href="#"><img src="img/img_catalog-item-2.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-          </div>
-
-          <div class="catalog__item">
-            <div class="catalog__decoration"></div>
-            <a href="#"><img src="img/img_catalog-item-3.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-          </div>
-
-          <div class="catalog__item">
-            <div class="catalog__decoration"></div>
-            <a href="#"><img src="img/img_catalog-item-4.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-          </div>
-
-          <div class="catalog__item">
-            <div class="catalog__decoration"></div>
-            <a href="#"><img src="img/img_catalog-item-5.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-          </div>
-
-          <div class="catalog__item">
-            <div class="catalog__decoration"></div>
-            <a href="#"><img src="img/img_catalog-item-6.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-          </div>
-        </div>
-        <ul class="pagination">
-          <li class="pagination__item  pagination__item--active"><a href="#">1</a></li>
-          <li class="pagination__item"><a href="#">2</a></li>
-          <li class="pagination__item"><a href="#">3</a></li>
-          <li class="pagination__item"><a href="#"><span>Следующая</span></a></li>
-        </ul>
       </div>
     </div>
     <div class="map" href="#">
-      <div class="map__contact">
-        <div class="map__title">
-          NЁRDS DESIGN STUDIO
+      <div class="container">
+        <div class="map__contact">
+          <div class="map__title">
+            NЁRDS DESIGN STUDIO
+          </div>
+          <p>
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn  map__btn" href="#">Напишите нам</a>
         </div>
-        <p>
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8
-        </p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn  map__btn" href="#">Напишите нам</a>
       </div>
       <div class="map__marker"></div>
     </div>
