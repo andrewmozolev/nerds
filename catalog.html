@@ -11,23 +11,25 @@
   <header class="main-header">
     <div class="container  clearfix">
 
-      <div class="main-header__top-wrapper  main-header__top-wrapper--catalog  clearfix">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/main-logo.png" width="139" height="56" alt="Main-Logo">
+      <div class="main-header__top-wrapper  clearfix">
+        <a class="main-logo" href="index.html">
+          <img class="main-logo__img" src="img/main-logo.png" width="139" height="56" alt="Main-Logo">
         </a>
-        <div class="main-header__cart">
-          <a href="#">Корзина</a>
+        <div class="main-cart">
+          <div class="main-cart__wrap">
+            <a class="main-cart__link  icon-basket" href="#">Корзина</a>
+          </div>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="#">Студия</a></li>
-            <li class="main-nav__list-item"><a href="#">Клиенты</a></li>
-            <li class="main-nav__list-item"><a href="#">Магазин</a></li>
-            <li class="main-nav__list-item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Студия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
-      <div class="main-header__title">Добро пожаловать в магазин готовых проектов</div>
+      <div class="main-header__title">Добро пожаловать в магазин готовых макетов</div>
     </div>
   </header>
 
@@ -44,169 +46,219 @@
                 <div class="range-filter__toggle  range-filter__toggle--max"></div>
               </div>
               <div class="range-filter__price-controls  clearfix">
-                <input class="range-filter__price-min" type="text" placeholder="0">
-                <input class="range-filter__price-max" type="text" placeholder="15000">
+                <label for="price-control--min">от
+                  <input class="range-filter__price-control  range-filter__price-control--min" id="price-control--min" type="text" placeholder="0"></label>
+                  <label for="price-control--max">до
+                    <input class="range-filter__price-control  range-filter__price-control--max" id="price-control--max" type="text" placeholder="15000"></label>
+                  </div>
+                </div>
+                <div class="form__title">Сетка:</div>
+
+                <ul class="form__list">
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--circle" id="Adaptive" type="radio" name="radio" checked>
+                    <label class="form__item-label" for="Adaptive">Адаптивная</label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--circle" id="fixed" type="radio" name="radio">
+                    <label class="form__item-label" for="fixed">Фиксированная</label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--circle" id="rubber" type="radio" name="radio" disabled>
+                    <label class="form__item-label" for="rubber">Резиновая</label>
+                  </li>
+                </ul>
+
+                <div class="form__title">Особенности:</div>
+
+                <ul class="form__list">
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--square" id="slider" type="checkbox" name="features" checked>
+                    <label class="form__item-label" for="slider">Слайдер</label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--square" id="advantages" type="checkbox" name="features">
+                    <label class="form__item-label" for="advantages">Блок преимуществ</label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--square" id="news" type="checkbox" name="features" checked>
+                    <label class="form__item-label" for="news">Новости</label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--square" id="gallery" type="checkbox" name="features" disabled>
+                    <label class="form__item-label" for="gallery">Галерея</label>
+                  </li>
+
+                  <li class="form__item">
+                    <input class="form__item-input  form__item-input--square" id="cart" type="checkbox" name="features">
+                    <label class="form__item-label" for="cart">Корзина</label>
+                  </li>
+                </ul>
+                <input class="form__btn" type="submit" value="Показать">
+              </form>
+            </div>
+            <div class="catalog__content">
+              <div class="sorting clearfix">
+                <div class="sorting__title">Сортировать:</div>
+                <div class="sorting__items">
+                  <a class="sorting__item  sorting__item--active" href="#">По цене</a>
+                  <a class="sorting__item" href="#">По типу</a>
+                  <a class="sorting__item" href="#">По функционалу</a>
+                </div>
+                <div class="sorting__swiches">
+                  <a href="#" class="sorting__swich  sorting__swich--down sorting__swich--active"></a>
+                  <a href="#" class="sorting__swich  sorting__swich--up"></a>
+                </div>
               </div>
-            </div>
-            <div class="form__title">Сетка:</div>
+              <div class="catalog__items">
+                <div class="item">
+                  <div class="item__actions">
+                    <div class="item__title">Aviator</div>
+                    <div class="item__text">
+                      Одностраничный макет
+                      с авторским дизайном
+                    </div>
+                    <div class="btn item__btn">8000 Р.</div>
+                  </div>
+                  <div class="item__decoration"><i class="item__decoration-item"></i></div>
+                  <a class="item__link" href="#"><img class="item__img" src="img/img_catalog-item-1.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                </div>
 
-            <ul class="form__list">
-              <li class="form__list-item">
-                <input id="Adaptive" type="checkbox" name="Adaptive" checked>
-                <label for="Adaptive">Адаптивная</label>
-              </li>
+                <div class="item">
+                  <div class="item__actions">
+                    <div class="item__title">Sunset</div>
+                    <div class="item__text">
+                      Интернет-магазин
+                      с&nbsp;личным&nbsp;кабинетом
+                    </div>
+                    <div class="btn item__btn">10000 Р.</div>
+                  </div>
+                  <div class="item__decoration"><i class="item__decoration-item"></i></div>
+                  <a class="item__link" href="#"><img class="item__img" src="img/img_catalog-item-2.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                </div>
 
-              <li class="form__list-item">
-                <input id="fixed" type="checkbox" name="fixed">
-                <label for="fixed">Фиксированная</label>
-              </li>
+                <div class="item">
+                  <div class="item__actions">
+                    <div class="item__title">Sunset</div>
+                    <div class="item__text">
+                      Интернет-магазин
+                      с&nbsp;личным&nbsp;кабинетом
+                    </div>
+                    <div class="btn item__btn">10000 Р.</div>
+                  </div>
+                  <div class="item__decoration"><i class="item__decoration-item"></i></div>
+                  <a class="item__link" href="#"><img class="item__img" src="img/img_catalog-item-3.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                </div>
 
-              <li class="form__list-item">
-                <input id="rubber" type="checkbox" name="rubber">
-                <label for="rubber">Резиновая</label>
-              </li>
-            </ul>
+                <div class="item">
+                  <div class="item__actions">
+                    <div class="item__title">Sunset</div>
+                    <div class="item__text">
+                      Интернет-магазин
+                      с&nbsp;личным&nbsp;кабинетом
+                    </div>
+                    <div class="btn item__btn">10000 Р.</div>
+                  </div>
+                  <div class="item__decoration"><i class="item__decoration-item"></i></div>
+                  <a class="item__link" href="#"><img class="item__img" src="img/img_catalog-item-4.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                </div>
 
-            <div class="form__title">Особенности:</div>
+                <div class="item">
+                  <div class="item__actions">
+                    <div class="item__title">Sunset</div>
+                    <div class="item__text">
+                      Интернет-магазин
+                      с&nbsp;личным&nbsp;кабинетом
+                    </div>
+                    <div class="btn item__btn">10000 Р.</div>
+                  </div>
+                  <div class="item__decoration"><i class="item__decoration-item"></i></div>
+                  <a class="item__link" href="#"><img class="item__img" src="img/img_catalog-item-5.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                </div>
 
-            <ul class="form__list">
-              <li class="form__list-item">
-                <input id="slider" type="checkbox" name="features" checked>
-                <label for="slider">Слайдер</label>
-              </li>
-
-              <li class="form__list-item">
-                <input id="advantages" type="checkbox" name="features">
-                <label for="advantages">Блок преимуществ</label>
-              </li>
-
-              <li class="form__list-item">
-                <input id="news" type="checkbox" name="features" checked>
-                <label for="news">Новости</label>
-              </li>
-
-              <li class="form__list-item">
-                <input id="gallery" type="checkbox" name="features">
-                <label for="gallery">Галерея</label>
-              </li>
-
-              <li class="form__list-item">
-                <input id="cart" type="checkbox" name="features">
-                <label for="cart">Корзина</label>
-              </li>
-            </ul>
-            <input class="form__btn" type="submit" value="Показать">
-          </form>
-        </div>
-        <div class="catalog__content">
-          <div class="sorting">
-            <div class="sorting__title">Сортировать:</div>
-            <div class="sorting__items">
-              <div class="sorting__item">По цене</div>
-              <div class="sorting__item">По типу</div>
-              <div class="sorting__item">По функционалу</div>
-            </div>
-            <div class="sorting__swiches">
-              <div class="sorting__swich  sorting__swich--down"></div>
-              <div class="sorting__swich  sorting__swich--up"></div>
-            </div>
-          </div>
-          <div class="catalog__items">
-            <div class="catalog__item">
-              <div class="catalog__decoration"></div>
-              <a href="#"><img src="img/img_catalog-item-1.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-            </div>
-
-            <div class="catalog__item">
-              <div class="catalog__decoration"></div>
-              <a href="#"><img src="img/img_catalog-item-2.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-            </div>
-
-            <div class="catalog__item">
-              <div class="catalog__decoration"></div>
-              <a href="#"><img src="img/img_catalog-item-3.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-            </div>
-
-            <div class="catalog__item">
-              <div class="catalog__decoration"></div>
-              <a href="#"><img src="img/img_catalog-item-4.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-            </div>
-
-            <div class="catalog__item">
-              <div class="catalog__decoration"></div>
-              <a href="#"><img src="img/img_catalog-item-5.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
-            </div>
-
-            <div class="catalog__item">
-              <div class="catalog__decoration"></div>
-              <a href="#"><img src="img/img_catalog-item-6.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                <div class="item">
+                  <div class="item__actions">
+                    <div class="item__title">Sunset</div>
+                    <div class="item__text">
+                      Интернет-магазин
+                      с&nbsp;личным&nbsp;кабинетом
+                    </div>
+                    <div class="btn item__btn">10000 Р.</div>
+                  </div>
+                  <div class="item__decoration"><i class="item__decoration-item"></i></div>
+                  <a class="item__link" href="#"><img class="item__img" src="img/img_catalog-item-6.jpg" alt="" width="240" height="240" alt="catalog__image"></a>
+                </div>
+              </div>
+              <ul class="pagination">
+              <li class="pagination__item  pagination__item--active"><a class="pagination__link" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#"><span class="pagination__text">Следующая</span></a></li>
+              </ul>
             </div>
           </div>
-          <ul class="pagination">
-            <li class="pagination__item  pagination__item--active"><a href="#">1</a></li>
-            <li class="pagination__item"><a href="#">2</a></li>
-            <li class="pagination__item"><a href="#">3</a></li>
-            <li class="pagination__item"><a href="#"><span>Следующая</span></a></li>
-          </ul>
         </div>
-      </div>
-    </div>
-    <div class="map" href="#">
-      <div class="container">
-        <div class="map__contact">
-          <div class="map__title">
-            NЁRDS DESIGN STUDIO
+        <div class="map" href="#">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461619964!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1450033993390" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="container">
+            <div class="map__contact">
+              <div class="map__title">
+                NЁRDS DESIGN STUDIO
+              </div>
+              <p class="map__text">
+                191186, Санкт-Петербург,
+                ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p class="map__text">тел. +7 (812) 275-75-75</p>
+              <a class="btn  map__btn" href="#">Напишите нам</a>
+            </div>
           </div>
-          <p>
-            191186, Санкт-Петербург,
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn  map__btn" href="#">Напишите нам</a>
         </div>
       </div>
-      <div class="map__marker"></div>
-    </div>
-  </div>
 
 
-  <footer class="main-footer">
-    <div class="container">
-      <div class="social">
-        <a href="#" class="social__btn  social__btn--vk">Вконтакте</a>
-        <a href="#" class="social__btn  social__btn--fb">Фейсбук</a>
-        <a href="#" class="social__btn  social__btn--inst">Инстаграм</a>
-      </div>
-      <div class="main-footer__titles">
-        <div class="main-footer__title">Давайте дружить,это выгодно!</div>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </div>
-    </div>
-  </footer>
-
-  <ariticle class="write-us">
-    <div class="write-us__close"></div>
-    <form class="write-us__form" action="/echo" method="post">
-      <div class="write-us__items">
-        <div class="write-us__item  write-us__item--name">
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
+      <footer class="main-footer">
+        <div class="container clearfix">
+          <div class="social">
+            <a class="social__btn  social__btn--vk" href="#"><i class="icon-vk"></i></a>
+            <a class="social__btn  social__btn--fb" href="#"><i class="icon-facebook"></i></a>
+            <a class="social__btn  social__btn--inst" href="#"><i class="icon-instagramm"></i></a>
+          </div>
+          <div class="main-footer__content">
+            <div class="main-footer__title">Давайте дружить, это выгодно!</div>
+            <p class="main-footer__text">Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
-        <div class="write-us__item  write-us__item--email">
-          <label for="email">Ваш e-mail:</label>
-          <input type="text" name="email" id="email"  placeholder="Для отправки ответа">
-        </div>
-        <div class="write-us__item  write-us__item--textarea">
-          <label for="textarea">Текст письма:</label>
-          <textarea id="textarea"  placeholder="В свободной форме"></textarea>
-        </div>
-      </div>
-      <div class="write-us__buttons">
-        <input class="btn  write-us__btn  write-us__btn--send" type="submit" name="send" id="send" value="Отправить">
-        <input class="btn  write-us__btn  write-us__btn--reset" type="reset" name="reset" id="reset" value="Отмена">
-      </div>
-    </form>
-  </ariticle>
+      </footer>
 
-</body>
-</html>
+      <ariticle class="write-us">
+        <div class="write-us__close"></div>
+        <form class="write-us__form" action="/echo" method="post">
+          <div class="write-us__items">
+            <div class="write-us__item  write-us__item--name">
+              <label for="name">Ваше имя:</label>
+              <input type="text" name="name" id="name"  placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="write-us__item  write-us__item--email">
+              <label for="email">Ваш e-mail:</label>
+              <input type="text" name="email" id="email"  placeholder="Для отправки ответа">
+            </div>
+            <div class="write-us__item  write-us__item--textarea">
+              <label for="textarea">Текст письма:</label>
+              <textarea id="textarea"  placeholder="В свободной форме"></textarea>
+            </div>
+          </div>
+          <div class="write-us__buttons">
+            <input class="btn  write-us__btn  write-us__btn--send" type="submit" name="send" id="send" value="Отправить">
+            <input class="btn  write-us__btn  write-us__btn--reset" type="reset" name="reset" id="reset" value="Отмена">
+          </div>
+        </form>
+      </ariticle>
+
+    </body>
+    </html>

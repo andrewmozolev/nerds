@@ -12,18 +12,20 @@
     <div class="container  clearfix">
 
       <div class="main-header__top-wrapper  clearfix">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/main-logo.png" width="139" height="56" alt="Main-Logo">
+        <a class="main-logo" href="index.html">
+          <img class="main-logo__img" src="img/main-logo.png" width="139" height="56" alt="Main-Logo">
         </a>
-        <div class="main-header__cart">
-          <a href="#">Корзина</a>
+        <div class="main-cart">
+          <div class="main-cart__wrap">
+            <a class="main-cart__link  icon-basket" href="#">Корзина</a>
+          </div>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="#">Студия</a></li>
-            <li class="main-nav__list-item"><a href="#">Клиенты</a></li>
-            <li class="main-nav__list-item"><a href="catalog.html">Магазин</a></li>
-            <li class="main-nav__list-item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Студия</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Клиенты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Магазин</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -40,26 +42,26 @@
 
         <div class="slider__slides">
           <div class="slider__slide slider__slide--1">
-            <div class="slider__text">
+            <div class="slider__content  slider__content--1">
               <h2 class="slider__title">
                 Долго, дорого,
                 скрупулезно.
               </h2>
-              <p>
+              <p class="slider__text">
                 Математически выверенный дизайн
-                для вашего сайта или мобильного приложения.
+                для&nbsp;вашего&nbsp;сайта&nbsp;или&nbsp;мобильного&nbsp;приложения.
               </p>
               <a class="slider__btn btn" href="#">Узнать больше</a>
             </div>
           </div>
 
           <div class="slider__slide slider__slide--2">
-            <div class="slider__text">
+            <div class="slider__content slider__content--2">
               <h2 class="slider__title">
                 Любите ли вы математику,
                 как любим ее мы?
               </h2>
-              <p>
+              <p class="slider__text">
                 Нашим дизайнерам мы удаляем нейроны, ответственные
                 за креатив, чтобы дать им возможность все просчитать
               </p>
@@ -68,12 +70,12 @@
           </div>
 
           <div class="slider__slide slider__slide--3">
-            <div class="slider__text">
+            <div class="slider__content slider__content--3">
               <h2 class="slider__title">
                 Только наркотики,
                 только хардкор!
               </h2>
-              <p>
+              <p class="slider__text">
                 Все дизайнерские решения в нашей компании принимаются только
                 под воздействием качественных галлюциногенов
               </p>
@@ -89,80 +91,80 @@
   <div class="main">
     <div class="main__container container">
       <div class="features-row">
-        <div class="features-item features-item--bg-web">
-          <div class="features-item__title">
+        <div class="features__item features__item--bg-web">
+          <div class="features__title">
             Веб-сайты
           </div>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="btn features-item__btn" href="#">Заказать</a>
+          <p class="features__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn  features__btn  features__btn--web" href="#">Заказать</a>
         </div>
-        <div class="features-item features-item--bg-app">
-          <div class="features-item__title">
+        <div class="features__item features__item--bg-app">
+          <div class="features__title">
             Приложения
           </div>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn  features-item__btn" href="#">Заказать</a>
+          <p class="features__text  features__text--app">Покорите топ-10 приложений в AppStrore и Google Play</p>
+          <a class="btn  features__btn  features__btn--app" href="#">Заказать</a>
         </div>
-        <div class="features-item features-item--bg-presentation">
-          <div class="features-item__title">
+        <div class="features__item features__item--bg-presentation">
+          <div class="features__title">
             Презентации
           </div>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn features-item__btn" href="#">Заказать</a>
+          <p class="features__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn  features__btn  features__btn--presentation" href="#">Заказать</a>
         </div>
       </div>
-      <hr>
+      <hr class="horizontal-line">
       <div class="about-us clearfix">
         <div class="about-us__column-left">
-          <h2 class="about-us__title">Мы -маленькая, но гордая дизайн-студия из Краснодара.</h2>
-          <p>
+          <h2 class="about-us__title">Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p class="about-us__text">
             Исповедуем принципы минимализма и чистоты. Ставим математический
             расчет выше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <div class="about-us__title">
+          <div class="about-us__title-small">
             Выполняем заказы на разработку:
           </div>
           <ul class="about-us__list">
-            <li class="about-us__list-item">Веб-сайтов любой сложности</li>
-            <li class="about-us__list-item">Мобильных приложений для iOS и Android</li>
-            <li class="about-us__list-item">Слайдщоу и видео для корпоративных презентаций</li>
+            <li class="about-us__item">Веб-сайтов любой сложности</li>
+            <li class="about-us__item">Мобильных приложений для iOS и Android</li>
+            <li class="about-us__item">Слайдщоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="about-us__column-right">
-          <a class="about-us__logo" href="#"><img src="img/img_logo-since.png" height="119" width="240" alt="Nerds"></a>
-          <div class="features-title">
+          <a class="about-us__img-link" href="#"><img class="about-us__link" src="img/img_logo-since.png" height="119" width="240" alt="Nerds"></a>
+          <div class="about-us__title-small">
             Как мы работаем:
           </div>
-          <ul>
-            <li class="about-us__list-item">С самоотдачей 146%</li>
-            <li class="about-us__list-item">Соблюдая сроки на 100%</li>
-            <li class="about-us__list-item">По предоплате 50%</li>
+          <ul class="about-us__list">
+            <li class="about-us__item">С самоотдачей 146%</li>
+            <li class="about-us__item">Соблюдая сроки на 100%</li>
+            <li class="about-us__item">По предоплате 50%</li>
           </ul>
         </div>
       </div>
-      <hr>
+      <hr class="horizontal-line">
       <div class="partners">
-        <a class="partners__item" href="#"><img src="img/img_partners-logo-glukhanko.png" width="198" height="37" alt="Glukhanko"></a>
-        <a class="partners__item" href="#"><img src="img/img_partners-logo-htmlacademy.png" width="199" height="50" alt="HtmlAcademy"></a>
-        <a class="partners__item" href="#"><img src="img/img_partners-logo-borodinski.png" width="209" height="116" alt="Borodinski"></a>
+        <a class="partners__link" href="#"><img class="partners__img" src="img/img_partners-logo-glukhanko.png" width="198" height="37" alt="Glukhanko"></a>
+        <a class="partners__link" href="#"><img class="partners__img" src="img/img_partners-logo-htmlacademy.png" width="199" height="50" alt="HtmlAcademy"></a>
+        <a class="partners__link" href="#"><img class="partners__img" src="img/img_partners-logo-borodinski.png" width="209" height="116" alt="Borodinski"></a>
       </div>
-      <hr>
+      <hr class="horizontal-line">
     </div>
     <div class="map" href="#">
+      <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461619964!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1450033993390" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="container">
         <div class="map__contact">
           <div class="map__title">
             NЁRDS DESIGN STUDIO
           </div>
-          <p>
+          <p class="map__text">
             191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>тел. +7 (812) 275-75-75</p>
+          <p class="map__text">тел. +7 (812) 275-75-75</p>
           <a class="btn  map__btn" href="#">Напишите нам</a>
         </div>
       </div>
-      <div class="map__marker"></div>
     </div>
   </div>
 
@@ -170,13 +172,13 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <div class="social">
-        <a href="#" class="social__btn  social__btn--vk">Вконтакте</a>
-        <a href="#" class="social__btn  social__btn--fb">Фейсбук</a>
-        <a href="#" class="social__btn  social__btn--inst">Инстаграм</a>
+        <a class="social__btn  social__btn--vk" href="#"><i class="icon-vk"></i></a>
+        <a class="social__btn  social__btn--fb" href="#"><i class="icon-facebook"></i></a>
+        <a class="social__btn  social__btn--inst" href="#"><i class="icon-instagramm"></i></a>
       </div>
-      <div class="main-footer__titles">
-        <div class="main-footer__title">Давайте дружить,это выгодно!</div>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="main-footer__content">
+        <div class="main-footer__title">Давайте дружить, это выгодно!</div>
+        <p class="main-footer__text">Скидка 10% для друзей из социальных сетей</p>
       </div>
     </div>
   </footer>
